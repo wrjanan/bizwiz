@@ -13,11 +13,6 @@ function httpGetAsync(theUrl, callback)
     xmlHttp.send(null);
 }
 
-function janan()
-{
-    httpGetAsync('')
-}
-
 var buttons = document.getElementById("companysearch");
 var companynametext = document.getElementById("companyname");
 
@@ -30,7 +25,7 @@ var companynametext = document.getElementById("companyname");
         $('#form-cname').val(companynametext.value);
       
       
-        httpGetAsync('https://www.bizwiz.heirloam.com/janan.php/TABLE23/' + companynametext.value + '/', cb());
+        httpGetAsync('https://www.bizwiz.heirloam.com/janan.php/TABLE23/' + companynametext.value + '/', cb);
 
       } else {
                 alert("Company name has to be at least 4 letters and greater");
@@ -59,6 +54,15 @@ function resetForm() {
 
 }
 
+function resetMainContainer(container) {
+  var idContainer = "#" + container + "-container";
+  
+      $(".main-container").removeClass('d-block fadeIn fadeOut');
+        $('.main-container:not(' + idContainer + ')').addClass('d-none animated fadeOut');
+        $(idContainer).addClass('d-block animated fadeIn');
+  
+}
+
 function submitForm() {
    // transparentcy the form and display form
   console.log("submitting");
@@ -67,9 +71,11 @@ function submitForm() {
 
 function cb(value) {
   console.log("cookie value");
-  console.log(value);
+  console.log("-"+value+"-");
+  value = value.trim();
+  console.log("-"+value+"-");
   
-  if(value === undefined) {
+  if(value === undefined || value === "" ||value === " " || value === null) {
     var companynametext = document.getElementById("companyname");
     setCookie('cname', companynametext.value, 30);
 
@@ -86,6 +92,7 @@ function cb(value) {
 
     $('#form-cname').val(json["entity_name"]);
 
+    return alert("Company Entity : " + json["entity_name"] + " already exists. Try your second best name.");
     resetForm();  
   }
   
