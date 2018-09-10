@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <script>      
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : 2036625766581789,
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v2.11'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    
+    <div class="container-fluid fill-screen">
+      <div class="row h-100">
+        <div class="col h-100">
+          
+          <div class="d-flex align-items-center flex-column fill">
+            <div class="h-50"></div>
+            <div class="p-2">
+              <h1>Hi there!</h1>
+              <p>
+                I'm your cool new webpage. Made with 
+                <a href="https://www.glitch.com">Glitch</a>
+              </p>
+              <div
+                class="fb-like"
+                data-share="true"
+                data-width="450"
+                data-show-faces="true">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col h-100">
+          
+          <div class="d-flex align-items-center flex-column fill">
+            <div class="h-50"></div>
+            <div class="p-2"><h1>Hi there!</h1>
+              <p>
+                I'm your cool new webpage. Made with 
+                <a href="https://www.glitch.com">Glitch</a>
+              </p>
+              <div
+                class="fb-like"
+                data-share="true"
+                data-width="450"
+                data-show-faces="true">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="fb-customerchat"
+     page_id="1370337276411490">
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+</html>

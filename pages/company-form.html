@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>      
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : 2036625766581789,
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v2.11'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+
+    
+    <div class="container-fluid">
+      <!-- top bar -->
+      <div class="row bg1">
+          
+        <!-- nav bar -->
+        <div class="container">
+
+          <nav class="navbar navbar-light sticky-top pt-4">
+            <a class="navbar-brand" href="#">
+              <img src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+              BizWiz
+            </a>
+
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">+65 9858 6269</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#"><img class="sgflag" src="https://lipis.github.io/flag-icon-css/flags/4x3/sg.svg" width="30" height="30" alt=""></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- nav bar -->
+
+        <!-- content -->
+
+        <div class="container pb-5 header-container text-center">
+          <!-- spacer -->
+          <div class="row mt-5 mb-5 pt-5 pt-5 pt-5 pb-5">
+          </div>
+
+          <!-- title -->
+          <div class="row mt-5">
+            <div class="col d-flex justify-content-center">
+
+              <h1 class="display-1 font-weight-bold">
+                Company Setup
+              </h1>
+            </div>
+
+          </div>
+
+          <!-- text box -->
+          <div class="row mt-4">
+            <div class="col d-flex justify-content-center">
+              <p>
+                At just SGD $ 420, we got all aspiring new businesses covered
+              </p>
+            </div>
+          </div>
+
+          <!-- spacer -->
+          <div class="row mt-3">
+
+          </div>
+
+
+          <!-- logo box -->
+          <div class="row mt-4 mb-4 d-flex justify-content-center">
+
+            <div class="col-md-auto">
+              <i class="fa fa-certificate" aria-hidden="true"></i> &nbsp;Transparent process
+
+            </div>          
+            <div class="col-md-auto">
+              <i class="fa fa-bolt" aria-hidden="true"></i> &nbsp;Speed our virtue
+
+            </div>          
+            <div class="col-md-auto">
+              <i class="fa fa-gavel" aria-hidden="true"></i> &nbsp;Professional services
+
+            </div>          
+            <div class="col-md-auto">
+              <i class="fa fa-users" aria-hidden="true"></i> &nbsp;Proven and assured
+            </div>          
+
+          </div>
+
+          <!-- search box -->
+          <div class="row mt-4 d-flex justify-content-center">
+            <div class="col-md-8">
+
+              <div class="input-group input-group-lg">
+                <input id="companyname" type="text" class="form-control" placeholder="Check for availability of company name.." aria-label="Check for availability of company name in Singapore.." aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-success" type="button" id="companysearch" onclick="janan();">&nbsp;&nbsp;&#128269;&nbsp;&nbsp;</button>
+                </div>
+
+                <br>
+                Start by trying our name check toll that syncs with Singapore's list of registered entities.
+                <br>
+                <br>
+              </div>          
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+      <!-- middle bar -->
+      <div class="row mt-0 d-flex align-items-center justify-content-center bg2 p-3">
+        <div class="col-2">
+        </div>
+        <div class="col-6 text-center">
+          <span class="align-middle text-light " >Join 100,000 Singapore companies who registered with us </span>     
+        </div>
+        <div class="col-2 text-left">
+          <button type="button" class="btn btn-outline-light">Success</button>
+        </div>
+        
+        <div class="col-2">
+        </div>
+      </div>
+      
+      <!-- middle 2 bar -->
+      <div class="row mt-4 d-flex align-items-center justify-content-center p-3">
+        <div class="col-2">
+        </div>
+        <div class="col-8 text-center">
+          <span class="align-middle display-4" > We distill Singapore's redtape, making company setup as simple and convenient as possible. </span>     
+        </div>
+        
+        <div class="col-2">
+        </div>
+      </div>
+      
+      
+      
+      
+      <!-- footer bar -->
+      <div class="row mt-5 d-flex align-items-center justify-content-center bg2 p-5">
+        <div class="col-2">
+        </div>
+        <div class="col-4 text-left">
+          
+          <span class="font-weight-bold text-light display-4">
+            BizWiz
+          </span>
+          <br>
+          <span class="align-middle text-light " >Our mission is to be the most efficient company set up online service for business owners looking for success in Singapore. 
+            
+            <br>Enabling business owners to focus on doing great business and achieving success in dreams.
+            <br><br>© Business Switch Pty Ltd </span>     
+        </div>
+        
+        
+        <div class="col-2 text-right">
+          <span class="font-weight-bold text-light">
+            Support
+          </span>
+          <br>
+          <span class="text-light"> herre</span>
+        </div>
+        
+        
+        <div class="col-2 text-center">
+          <span class="font-weight-bold text-light">
+            Company
+          </span>
+          <br>
+          <span class="text-light"> herre</span>
+        </div>
+        
+        
+        <div class="col-2 text-left">
+          <span class="font-weight-bold text-light">
+            Connect
+          </span>
+          <br>
+          <span class="text-light"> Contact Us</span>
+        </div>
+        
+        <div class="col-2">
+        </div>
+      </div>
+    </div>
+    <!-- content -->
+    
+    
+    
+    <!-- FB chat plugin -->
+    <div class="fb-customerchat"
+     page_id="1370337276411490">
+    </div>
+    <!-- FB chat plugin -->
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+</html>
